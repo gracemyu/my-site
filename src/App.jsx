@@ -268,8 +268,8 @@ const styles = {
 }
 
 const skills = [
-  'Python', 'Java', 'C++', 'JavaScript',
-  'React', 'Node.js', 'MySQL', 'Docker',
+  'Python', 'Java', 'C / C++', 'JavaScript',
+  'React', 'Node.js', 'PostgreSQL', 'Docker',
   'AWS', 'Git', 'Linux', 'REST APIs',
 ]
 
@@ -356,29 +356,21 @@ export default function App() {
         {/* ABOUT */}
         <section id="about" style={styles.section}>
           <span style={styles.label}>About</span>
-          <p style={styles.aboutP}>Hi, I'm Grace Yu, a [year] year CS student at [University] focused on systems and software engineering.</p>
+          <p style={styles.aboutP}>Hi, I'm Grace Yu — a [year] year CS student at [University] focused on systems and software engineering.</p>
           <p style={styles.aboutP}>I care about writing clean, thoughtful code and understanding how things work at a deeper level. Outside of class I contribute to open source, work on side projects, and occasionally write about things I'm learning.</p>
-          <p style={{ ...styles.aboutP, marginBottom: 0 }}>Currently looking for <strong>Summer 2025 internships</strong> in software engineering or backend roles.</p>
-
-          <div style={styles.skillsBlock}>
-            <span style={styles.label}>Skills</span>
-            <div style={styles.skillsRow}>
-              {skills.map(s => <span key={s} style={styles.skill}>{s}</span>)}
+          <p style={styles.aboutP}>Currently looking for <strong>Summer 2025 internships</strong> in software engineering or backend roles.</p>
+          <p style={{ ...styles.aboutP, marginBottom: '2rem' }}>
+            <strong>Skills:</strong> {skills.join(' · ')}
+          </p>
+          {interests.map((item, i) => (
+            <div key={i} style={{
+              ...styles.interestItem,
+              borderTop: i === 0 ? '1px solid #c8c8c8' : 'none',
+            }}>
+              <p style={styles.interestName}>{item.name}</p>
+              <p style={styles.interestDesc}>{item.desc}</p>
             </div>
-          </div>
-
-          <div style={styles.interestsBlock}>
-            <span style={styles.label}>Current Interests</span>
-            {interests.map((item, i) => (
-              <div key={i} style={{
-                ...styles.interestItem,
-                borderTop: i === 0 ? '1px solid #c8c8c8' : 'none',
-              }}>
-                <p style={styles.interestName}>{item.name}</p>
-                <p style={styles.interestDesc}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
+          ))}
         </section>
 
         {/* COURSEWORK */}
