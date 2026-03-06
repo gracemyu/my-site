@@ -1,23 +1,23 @@
 const styles = {
   root: {
     fontFamily: "'Lora', Georgia, serif",
-    fontSize: '17px',
+    fontSize: '21px',
     lineHeight: '1.75',
-    background: '#fafaf8',
-    color: '#1a1a1a',
+    background: '#ffffff',
+    color: '#000000',
     WebkitFontSmoothing: 'antialiased',
   },
   wrap: {
-    maxWidth: '1100px',
+    maxWidth: '960px',
     margin: '0 auto',
     padding: '0 4rem',
-    },
+  },
   nav: {
     padding: '2.5rem 0 2rem',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'baseline',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
     flexWrap: 'wrap',
     gap: '1rem',
   },
@@ -25,7 +25,7 @@ const styles = {
     fontFamily: "'Lora', Georgia, serif",
     fontSize: '1rem',
     fontWeight: 500,
-    color: '#1a1a1a',
+    color: '#000000',
     textDecoration: 'none',
   },
   navLinks: {
@@ -38,19 +38,27 @@ const styles = {
   },
   navLink: {
     fontFamily: "'IBM Plex Mono', monospace",
-    fontSize: '0.72rem',
-    color: '#6b6b6b',
+    fontSize: '1rem',
+    color: '#2a2a2a',
     textDecoration: 'none',
     letterSpacing: '0.04em',
   },
   section: {
     padding: '5rem 0',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
+  },
+  heroSection: {
+    padding: '10rem 0 8rem',
+    borderBottom: '1px solid #c8c8c8',
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   label: {
     fontFamily: "'IBM Plex Mono', monospace",
-    fontSize: '0.68rem',
-    color: '#6b6b6b',
+    fontSize: '1rem',
+    color: '#2a2a2a',
     letterSpacing: '0.12em',
     textTransform: 'uppercase',
     marginBottom: '2rem',
@@ -61,7 +69,7 @@ const styles = {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.72rem',
     letterSpacing: '0.1em',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     textTransform: 'uppercase',
     marginBottom: '1.5rem',
   },
@@ -75,14 +83,15 @@ const styles = {
   },
   heroNameEm: {
     fontStyle: 'italic',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
   },
   heroBio: {
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     fontSize: '1rem',
-    maxWidth: '500px',
+    maxWidth: '560px',
     lineHeight: '1.8',
     marginBottom: '2.5rem',
+    textAlign: 'center',
   },
   heroLinks: {
     display: 'flex',
@@ -94,23 +103,23 @@ const styles = {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.72rem',
     letterSpacing: '0.06em',
-    color: '#1a1a1a',
+    color: '#000000',
     textDecoration: 'none',
-    borderBottom: '1px solid #1a1a1a',
+    borderBottom: '1px solid #000000',
     paddingBottom: '2px',
   },
   heroLink: {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.72rem',
     letterSpacing: '0.06em',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     textDecoration: 'none',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
     paddingBottom: '2px',
   },
   // About
   aboutP: {
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     marginBottom: '1rem',
     fontSize: '1rem',
   },
@@ -120,14 +129,14 @@ const styles = {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.72rem',
     letterSpacing: '0.04em',
-    color: '#6b6b6b',
-    border: '1px solid #e5e5e5',
+    color: '#2a2a2a',
+    border: '1px solid #c8c8c8',
     padding: '0.3rem 0.75rem',
   },
   interestsBlock: { marginTop: '2.5rem' },
   interestItem: {
     padding: '1.5rem 0',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
   },
   interestName: {
     fontFamily: "'Lora', Georgia, serif",
@@ -137,7 +146,7 @@ const styles = {
   },
   interestDesc: {
     fontSize: '0.92rem',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     lineHeight: '1.8',
   },
   // Coursework
@@ -147,13 +156,13 @@ const styles = {
     gridTemplateColumns: '5rem 1fr',
     gap: '1.5rem',
     padding: '1.25rem 0',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
     alignItems: 'start',
   },
   courseCode: {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.68rem',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     letterSpacing: '0.06em',
     paddingTop: '0.1rem',
   },
@@ -165,13 +174,13 @@ const styles = {
   },
   courseDesc: {
     fontSize: '0.85rem',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     lineHeight: '1.7',
   },
   // Publications
   pubItem: {
     padding: '1.75rem 0',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
   },
   pubTitle: {
     fontFamily: "'Lora', Georgia, serif",
@@ -183,14 +192,14 @@ const styles = {
   pubAuthors: {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.7rem',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     letterSpacing: '0.03em',
     marginBottom: '0.2rem',
   },
   pubVenue: {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.7rem',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     fontStyle: 'italic',
     marginBottom: '0.75rem',
     letterSpacing: '0.02em',
@@ -199,23 +208,23 @@ const styles = {
   pubLink: {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.68rem',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     textDecoration: 'none',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
     paddingBottom: '1px',
     letterSpacing: '0.04em',
   },
   // Blog
   blogPlaceholder: {
     padding: '3rem 0',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.78rem',
     letterSpacing: '0.06em',
   },
   // Contact
   contactP: {
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     marginBottom: '2rem',
     fontSize: '1rem',
     maxWidth: '460px',
@@ -225,12 +234,12 @@ const styles = {
     alignItems: 'baseline',
     gap: '1.5rem',
     padding: '0.9rem 0',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
   },
   contactType: {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.65rem',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     letterSpacing: '0.1em',
     textTransform: 'uppercase',
     width: '5rem',
@@ -239,9 +248,9 @@ const styles = {
   contactLink: {
     fontFamily: "'Lora', Georgia, serif",
     fontSize: '0.95rem',
-    color: '#1a1a1a',
+    color: '#000000',
     textDecoration: 'none',
-    borderBottom: '1px solid #e5e5e5',
+    borderBottom: '1px solid #c8c8c8',
     paddingBottom: '1px',
   },
   // Footer
@@ -253,14 +262,14 @@ const styles = {
   footerP: {
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: '0.65rem',
-    color: '#6b6b6b',
+    color: '#2a2a2a',
     letterSpacing: '0.06em',
   },
 }
 
 const skills = [
-  'Python', 'Java', 'C / C++', 'JavaScript',
-  'React', 'Node.js', 'PostgreSQL', 'Docker',
+  'Python', 'Java', 'C++', 'JavaScript',
+  'React', 'Node.js', 'MySQL', 'Docker',
   'AWS', 'Git', 'Linux', 'REST APIs',
 ]
 
@@ -317,7 +326,7 @@ export default function App() {
 
         {/* NAV */}
         <nav style={styles.nav}>
-          <a href="#hero" style={styles.navName}>Your Name</a>
+          <a href="#hero" style={styles.navName}>Grace Yu</a>
           <ul style={styles.navLinks}>
             {['about', 'courses', 'publications', 'blog', 'contact'].map(s => (
               <li key={s}>
@@ -328,16 +337,14 @@ export default function App() {
         </nav>
 
         {/* HERO */}
-        <section id="hero" style={styles.section}>
+        <section id="hero" style={styles.heroSection}>
           <p style={styles.heroIntro}>CS Student · [University] · Class of 20XX</p>
           <h1 style={styles.heroName}>
-            Your Name<br />
-            <em style={styles.heroNameEm}>— software engineer.</em>
+            Grace Yu
           </h1>
           <p style={styles.heroBio}>
-            I build software. Interested in backend systems, distributed computing,
-            and writing code that's a pleasure to read.
-            Open to internship and new grad opportunities.
+            Currently interested in the foundations + applications of intelligence,
+            building cool technology, strategy consulting, and quantitative finance.
           </p>
           <div style={styles.heroLinks}>
             <a href="#about" style={styles.heroLinkPrimary}>About</a>
@@ -349,7 +356,7 @@ export default function App() {
         {/* ABOUT */}
         <section id="about" style={styles.section}>
           <span style={styles.label}>About</span>
-          <p style={styles.aboutP}>Hi, I'm [Your Name] — a [year] year CS student at [University] focused on systems and software engineering.</p>
+          <p style={styles.aboutP}>Hi, I'm Grace Yu, a [year] year CS student at [University] focused on systems and software engineering.</p>
           <p style={styles.aboutP}>I care about writing clean, thoughtful code and understanding how things work at a deeper level. Outside of class I contribute to open source, work on side projects, and occasionally write about things I'm learning.</p>
           <p style={{ ...styles.aboutP, marginBottom: 0 }}>Currently looking for <strong>Summer 2025 internships</strong> in software engineering or backend roles.</p>
 
@@ -365,7 +372,7 @@ export default function App() {
             {interests.map((item, i) => (
               <div key={i} style={{
                 ...styles.interestItem,
-                borderTop: i === 0 ? '1px solid #e5e5e5' : 'none',
+                borderTop: i === 0 ? '1px solid #c8c8c8' : 'none',
               }}>
                 <p style={styles.interestName}>{item.name}</p>
                 <p style={styles.interestDesc}>{item.desc}</p>
@@ -381,7 +388,7 @@ export default function App() {
             {courses.map((c, i) => (
               <li key={i} style={{
                 ...styles.courseItem,
-                borderTop: i === 0 ? '1px solid #e5e5e5' : 'none',
+                borderTop: i === 0 ? '1px solid #c8c8c8' : 'none',
               }}>
                 <span style={styles.courseCode}>{c.code}</span>
                 <div>
@@ -399,7 +406,7 @@ export default function App() {
           {publications.map((pub, i) => (
             <div key={i} style={{
               ...styles.pubItem,
-              borderTop: i === 0 ? '1px solid #e5e5e5' : 'none',
+              borderTop: i === 0 ? '1px solid #c8c8c8' : 'none',
             }}>
               <p style={styles.pubTitle}>{pub.title}</p>
               <p style={styles.pubAuthors}>{pub.authors}</p>
@@ -429,7 +436,7 @@ export default function App() {
           <span style={styles.label}>Contact</span>
           <p style={styles.contactP}>Looking for internship and new grad opportunities. If you have a role, a project, or just want to talk — reach out.</p>
           <div>
-            <div style={{ ...styles.contactRow, borderTop: '1px solid #e5e5e5' }}>
+            <div style={{ ...styles.contactRow, borderTop: '1px solid #c8c8c8' }}>
               <span style={styles.contactType}>Email</span>
               <a href="mailto:you@example.com" style={styles.contactLink}>you@example.com</a>
             </div>
@@ -442,7 +449,7 @@ export default function App() {
 
         {/* FOOTER */}
         <footer style={styles.footer}>
-          <p style={styles.footerP}>Your Name</p>
+          <p style={styles.footerP}>Grace Yu</p>
           <p style={styles.footerP}>2025</p>
         </footer>
 
