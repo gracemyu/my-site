@@ -8,10 +8,10 @@ const styles = {
     WebkitFontSmoothing: 'antialiased',
   },
   wrap: {
-    maxWidth: '680px',
+    maxWidth: '1100px',
     margin: '0 auto',
-    padding: '0 2rem',
-  },
+    padding: '0 4rem',
+    },
   nav: {
     padding: '2.5rem 0 2rem',
     display: 'flex',
