@@ -11,6 +11,7 @@ const styles = {
     maxWidth: '1100px',
     margin: '0 auto',
     padding: '0 4rem',
+    alignItems,
     },
   nav: {
     padding: '2.5rem 0 2rem',
